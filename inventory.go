@@ -9,6 +9,10 @@ import (
 	// "gopkg.in/validator.v2"
 )
 
+func listItems(w http.ResponseWriter, r *http.Request) {
+	json.NewEncoder(w).Encode(items)
+}
+
 
 func addInventory(itemId int, amount int) error {
 	err := errors.New("this item doesnt exist")
