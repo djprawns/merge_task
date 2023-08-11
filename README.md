@@ -15,6 +15,9 @@ cd merge_task
 ```
 Then run
 ```go
+// gets all dependencies
+go get
+
 // runs all the tests
 go test -v
 
